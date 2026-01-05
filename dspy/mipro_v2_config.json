@@ -1,0 +1,71 @@
+{
+  "ranker.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "user_profile": "- Age: 45-54 years old\n- Location: United States\n- Gender: Male\n- Education: Graduate \/ Professional degree\n- Employment Status: Working full-time\n- Self-description: \"I am trying to always learn more. I use my time as a way to better myself.\"\n- Expectations from AI systems: \"the system should be sure to do no harm. even in creative writing it should limit itself to language that is not harmful\"\n- Language model usage areas: research, source suggestions, professional work, casual conversation, technical or programming help, lifestyle and hobbies, historical or news insight",
+        "prefix": "why are people willing to fall for single-issue candidates who only have ideas for one",
+        "suggestions": "1. aspect of\n2. thing\n3. aspect\n4. issue\n5. thing?",
+        "reasoning": "Looking at the user profile, this is someone educated (graduate degree) who values learning and thoughtful discussion. The prefix is about political candidates with narrow platforms, and the user is asking why people support such candidates.\n\nFor ranking the suggestions, I need to consider what would most naturally complete this thought:\n- \"issue\" (4) is the most natural continuation since it directly relates to the \"single-issue candidates\" mentioned in the prefix\n- \"thing\" (2) is a common, generic word that could work grammatically\n- \"thing?\" (5) is the same as above but with punctuation, which is slightly less likely as the user might continue the thought\n- \"aspect of\" (1) is grammatically sound but less common in everyday typing than simpler options\n- \"aspect\" (3) is similar to \"aspect of\" but less likely to be the immediate continuation\n\nThe user's educational background and interest in research suggests they might prefer precise language, but typing patterns typically favor simpler, more common words when available.",
+        "ranked_suggestions": "4,2,5,1,3"
+      },
+      {
+        "augmented": true,
+        "user_profile": "- Age: 45-54 years old\n- Location: United States\n- Gender: Male\n- Education: Graduate \/ Professional degree\n- Employment Status: Working full-time\n- Self-description: \"I am trying to always learn more. I use my time as a way to better myself.\"\n- Expectations from AI systems: \"the system should be sure to do no harm. even in creative writing it should limit itself to language that is not harmful\"\n- Language model usage areas: research, source suggestions, professional work, casual conversation, technical or programming help, lifestyle and hobbies, historical or news insight",
+        "prefix": "why are people willing to fall",
+        "suggestions": "1. for such\n2. in\n3. for\n4. in love\n5. on",
+        "reasoning": "I need to rank these suggestions based on what this user would most likely type next, focusing on typing patterns and statistical likelihood rather than semantic value.\n\nThe user is a 45-54 year old male with a graduate degree who values learning and self-improvement. He uses AI for research, professional work, and various information-seeking purposes.\n\nLooking at the prefix \"why are people willing to fall\" and considering natural language patterns:\n- \"for\" is a very common preposition that would naturally follow \"fall\" (fall for something\/someone)\n- \"in love\" completes a common phrase \"fall in love\" which is statistically frequent\n- \"in\" could lead to various completions including \"in love\"\n- \"for such\" is grammatical but less common than simple \"for\"\n- \"on\" is grammatically possible but less common with \"fall\" in this context\n\nThe most statistically likely completions would be either the simple preposition \"for\" or the common phrase \"in love\".",
+        "ranked_suggestions": "3,4,2,1,5"
+      },
+      {
+        "user_profile": "- Age: 35-44 years old\n- Location: Canada\n- Gender: Male\n- Education: Some Secondary\n- Employment Status: Working full-time\n- Self-description: \"I believe in others being honest with me and I will do the same. I think that rules and laws are in place to keep people safe overall. A core value I have always believed in is to treat others how you wish to be treated yourself. That we should do our best every day to make the most positive impact that we can.\"\n- Expectations from AI systems: \"I'd like it to be 'friendly' welcoming and not abrasive. To ensure that it addressed the issues at all, and was on point to the task. It made the point clear, so kept professional and did not delve too deep into storytelling or get off track. Never give advice that would cause physical or mental harm to someone else.\"\n- Language model usage areas: research, lifestyle and hobbies, well-being guidance, games",
+        "prefix": "i know that someone broke the law, but if",
+        "suggestions": "1. there\n2. it\n3. we\n4. I\n5. it’s",
+        "reasoning": "\"Analyzing the user profile, which emphasizes honesty, rules, and treating others with respect, the suggestions must be evaluated for their potential to complete a statement about legal or ethical considerations. The user values professional and clear communication, so the suggestions should reflect a thoughtful approach to a potentially complex situation involving law-breaking.\n\nThe suggestions appear to be fragments that could introduce different perspectives on how to handle a legal transgression. Given the user's strong belief in rules and safety, the ranking prioritizes suggestions that might lead to a responsible, ethical resolution or understanding of the situation.\n\nSuggestion 4 (\"I\") suggests a personal, reflective approach, which aligns with the user's value of treating others fairly. Suggestion 2 (\"it\") could introduce a neutral, objective perspective. Suggestion 3 (\"we\") implies a collaborative or collective approach to addressing the issue. Suggestions 1 and 5 seem less substantive in this context.\"",
+        "ranked_suggestions": "4,2,3,1,5"
+      },
+      {
+        "user_profile": "- Age: 18-24 years old\n- Location: Switzerland\n- Gender: Male\n- Education: Completed Secondary School\n- Employment Status: Student\n- Self-description: \"I want to teach my children to behave corectly. I think its important to learn some basic of the language of the country you are travelling to.\"\n- Expectations from AI systems: \"I want the AI model to give me Ideas out of the Box. I want the AI to learn how I am so it can give me more accurate answers\"\n- Language model usage areas: professional work, creative writing",
+        "prefix": "how can i become a pilot in switzerland? what do i have to",
+        "suggestions": "1. do\n2. study\n3. do to\n4. study?\n5. do?",
+        "reasoning": NaN,
+        "ranked_suggestions": "1,5,3,2,4"
+      }
+    ],
+    "signature": {
+      "instructions": "You are a personalized text prediction system. Your task is to rank 5 suggested text completions based on what the user is most likely to type next, considering both their individual profile and natural language patterns.\n\nFor each task:\n1. Carefully analyze the user profile, which includes demographics, values, and AI usage expectations\n2. Examine the text prefix the user has already typed\n3. Evaluate each of the 5 suggested completions\n\nWhen ranking suggestions:\n- Focus exclusively on TYPING LIKELIHOOD - what the user would naturally type next\n- Consider the statistical frequency of words in everyday language\n- Prioritize common words and phrases (like \"the\", \"and\", \"of\", \"to\", \"in\") even if they seem generic\n- Accept partial word completions as valid predictions\n- Take into account the user's likely writing style based on their profile\n- Consider how the prefix context constrains likely next words\n\nDo NOT prioritize:\n- What would make the most helpful response\n- What would complete the sentence most elegantly\n- What would be most informative or detailed\n- What aligns with your own values or preferences\n\nFirst, provide step-by-step reasoning analyzing each suggestion's likelihood, considering language patterns, the user's profile characteristics, and the context of the prefix. Then output your final ranking as a comma-separated list of suggestion numbers from most to least likely (e.g., \"3, 1, 5, 2, 4\").\n\nRemember: Your goal is to predict actual typing behavior, not to recommend ideal completions.",
+      "fields": [
+        {
+          "prefix": "User Profile:",
+          "description": "User context for understanding their typical language patterns and writing style."
+        },
+        {
+          "prefix": "Prefix:",
+          "description": "Text prefix typed by the user."
+        },
+        {
+          "prefix": "Suggestions:",
+          "description": "List of 5 suggested completions, numbered 1–5."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Ranked Suggestions:",
+          "description": "Ranked suggestion numbers from most to least likely to be typed next by this user, comma-separated. E.g., '1, 3, 2, 4, 5'. Prioritize statistical likelihood and natural typing patterns over semantic value."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "2.6.25",
+      "cloudpickle": "3.1"
+    }
+  }
+}
