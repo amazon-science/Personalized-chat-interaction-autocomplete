@@ -6,5 +6,5 @@ s3fs
 docker
 dspy
 sentence_transformers
-datasets==2.14.6
+datasets==5.0.1
 pyarrow~=20.0.0
